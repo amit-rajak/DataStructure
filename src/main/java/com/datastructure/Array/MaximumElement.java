@@ -15,7 +15,7 @@ public class MaximumElement {
                  max=arr[i];
          }
          return max;
-    }
+    } 
 
 
 }
