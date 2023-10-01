@@ -6,7 +6,7 @@ target ='k';*/
 public class SerachCharInString {
     public static void main(String[] args) {
         String str="Amit kumark";
-        int target='P';   // Pass Input here
+        char target='A';   // Pass Input here
         findCharInString(str,target);
     }
 
