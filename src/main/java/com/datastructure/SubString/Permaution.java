@@ -2,8 +2,14 @@ package com.datastructure.SubString;
 
 public class Permaution {
 
+    /*
+
+    ABC
+     */
+
+
     public static void main(String[] args) {
-     PermautionPrint("","abcd");
+     PermautionPrint("","abc");
     }
     public static void PermautionPrint(String p,String up)
     {
