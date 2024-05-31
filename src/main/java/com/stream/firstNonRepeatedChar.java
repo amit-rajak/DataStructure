@@ -18,12 +18,12 @@ public class firstNonRepeatedChar {
         Character result = input.chars() // Stream of String
                 .mapToObj(c -> (char) c)
                 .collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new,Collectors.counting()))
-                        .entrySet()
-                                .stream()
-                                        .filter(entry->entry.getValue()==1)
-                                                .map(entry->entry.getKey())
-                                                       // .collect(Collectors.toList()); //print all no reprting cha
-                                                        .findFirst().get();
+                .entrySet()
+                .stream()
+                .filter(entry->entry.getValue()==1)
+                .map(entry->entry.getKey())
+                // .collect(Collectors.toList()); //print all no reprting cha
+                .findFirst().get();
         System.out.println(result);
         //System.out.println(NoreptingChar);
     }}

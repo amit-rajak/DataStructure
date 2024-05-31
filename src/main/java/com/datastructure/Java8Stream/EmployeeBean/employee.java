@@ -1,23 +1,14 @@
 package com.datastructure.Java8Stream.EmployeeBean;
 
-public  class employee
-{
+public class employee {
     int id;
-
     String name;
-
     int age;
-
     String gender;
-
     String department;
-
     int yearOfJoining;
-
     double salary;
-
-    public employee(int id, String name, int age, String gender, String department, int yearOfJoining, double salary)
-    {
+    public employee(int id, String name, int age, String gender, String department, int yearOfJoining, double salary) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -27,50 +18,35 @@ public  class employee
         this.salary = salary;
     }
 
-    public int getId()
-    {
+    public int getId() {
         return id;
     }
-
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
-
-    public int getAge()
-    {
+    public int getAge() {
         return age;
     }
-
-    public String getGender()
-    {
+    public String getGender() {
         return gender;
     }
-
-    public String getDepartment()
-    {
+    public String getDepartment() {
         return department;
     }
-
-    public int getYearOfJoining()
-    {
+    public int getYearOfJoining() {
         return yearOfJoining;
     }
-
-    public double getSalary()
-    {
+    public double getSalary() {
         return salary;
     }
-
     @Override
-    public String toString()
-    {
-        return "Id : "+id
-                +", Name : "+name
-                +", age : "+age
-                +", Gender : "+gender
-                +", Department : "+department
-                +", Year Of Joining : "+yearOfJoining
-                +", Salary : "+salary;
+    public String toString() {
+        return "Id : " + id
+                + ", Name : " + name
+                + ", age : " + age
+                + ", Gender : " + gender
+                + ", Department : " + department
+                + ", Year Of Joining : " + yearOfJoining
+                + ", Salary : " + salary;
     }
 }

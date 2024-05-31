@@ -1,6 +1,4 @@
-package com.striver.Array;
-
-import java.util.Map;
+package com.striver.array;
 
 public class MaxElement {
     public static void main(String[] args) {

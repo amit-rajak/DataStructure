@@ -1,4 +1,4 @@
-package com.striver.Array;
+package com.striver.array;
 
 //https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 public class RemoveDuplice {

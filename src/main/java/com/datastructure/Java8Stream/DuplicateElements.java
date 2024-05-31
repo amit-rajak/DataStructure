@@ -11,6 +11,8 @@ public class DuplicateElements {
 
         List<Integer>list= Arrays.asList(10,15,8,49,25,98,98,32,15,32);
         Set<Integer> set = new HashSet();
-        list.stream().filter(n->!set.add(n)).forEach(System.out::println);
+        list.stream().
+                filter(n->!set.add(n))
+                .forEach(System.out::println);
     }
 }

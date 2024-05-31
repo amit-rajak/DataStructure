@@ -1,6 +1,5 @@
-package com.striver.Array;
+package com.striver.array;
 
-import java.sql.Array;
 import java.util.ArrayList;
 
 public class InterSectionOfArray {

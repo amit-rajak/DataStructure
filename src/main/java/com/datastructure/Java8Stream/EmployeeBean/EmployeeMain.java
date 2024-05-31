@@ -29,26 +29,8 @@ public class EmployeeMain {
 
 
         //Query 1 : How many male and female employees are there in the organization?
-
-        Map<String, Long> noOfMaleAndFemaleEmployees=employeeList.stream()
-                .collect(Collectors.groupingBy(employee::getGender,Collectors.counting()));
-        System.out.println("How many male and female employees are there in the organization\n"+noOfMaleAndFemaleEmployees);
-
-        //2 : Print the name of all departments in the organization?
-
-       List l= employeeList.stream().map(employee::getDepartment).distinct().collect(Collectors.toList());
-
-       System.out.println("2 : Print the name of all departments in the organization\n"+l);
-
-
-        Map<String,Double> avgAgeOfMaleAndFemale=
-                employeeList.stream()
-                        .collect(Collectors.groupingBy(employee ::getGender,Collectors.averagingInt(employee::getAge)));
-
-        System.out.println(avgAgeOfMaleAndFemale);
-
-
-
+        Map<String,Long> map=employeeList.stream().collect(Collectors.groupingBy(employee::getGender,Collectors.counting()));
+        System.out.println(map);
 
     }
 }

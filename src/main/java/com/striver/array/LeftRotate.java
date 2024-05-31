@@ -1,4 +1,4 @@
-package com.striver.Array;
+package com.striver.array;
 
 public class LeftRotate  {
 }

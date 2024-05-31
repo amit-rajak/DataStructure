@@ -1,4 +1,4 @@
-package com.striver.Array;
+package com.striver.array;
 
 import java.util.Arrays;
 
@@ -12,9 +12,9 @@ public class MoveToZeroOptimal {
     }
 
 
-    public static int[] moveZeroEnd(int arr[])
+    public static int[] moveZeroEnd(int a[])
     {
-        int j=-1;
+        /*int j=-1;
         for(int i=0;i<arr.length;i++ )
         {
             if(arr[i]==0)
@@ -33,9 +33,27 @@ public class MoveToZeroOptimal {
                arr[j]=temp;
                j++;
             }
+        }*/
+        // code here
+        int j=-1;
+        for(int i=a.length-1;i>0;i--){
+            if(a[i]==0){
+                j=i;
+                break;
+            }
         }
 
-        return arr;
+        for(int i=j;i>=0;i--){
+            if(a[i]!=0){
+                int temp=a[j];
+                a[j]=a[i];
+                a[i]=temp;
+                j--;
+            }
+        }
+
+
+        return a;
     }
 
 

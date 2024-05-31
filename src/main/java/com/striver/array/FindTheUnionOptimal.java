@@ -1,8 +1,6 @@
-package com.striver.Array;
+package com.striver.array;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class FindTheUnionOptimal {
     public static void main(String[] args) {
