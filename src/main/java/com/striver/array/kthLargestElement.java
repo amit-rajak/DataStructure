@@ -12,16 +12,18 @@ public class kthLargestElement {
 
     private static int kthLargest(int[] arr, int k) {
         PriorityQueue<Integer>priorityQueue= new PriorityQueue<>();
-        for(int i=0;i<k;i++){
-            priorityQueue.add(arr[i]);
-        }
-
-        for(int i=k;i< arr.length;i++){
-            if(arr[i]>priorityQueue.peek()){
-                priorityQueue.poll();
+        for(int i=0;i<arr.length;i++){
+            if(i<k) {
                 priorityQueue.add(arr[i]);
             }
+            else
+            {
+                if(arr[i]>priorityQueue.peek()){
+                    priorityQueue.poll();
+                    priorityQueue.add(arr[i]);
+                }
+            }
         }
-        return priorityQueue.poll();
+        return priorityQueue.peek();
     }
 }

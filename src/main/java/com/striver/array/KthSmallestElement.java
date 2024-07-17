@@ -1,5 +1,6 @@
 package com.striver.array;
 
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class KthSmallestElement {
@@ -13,9 +14,9 @@ public class KthSmallestElement {
     }
 
     private static int  kthSmallest(int[] arr, int k) {
-        PriorityQueue<Integer> priorityQueue =new PriorityQueue<>();
+        PriorityQueue<Integer> priorityQueue =new PriorityQueue<>(Collections.reverseOrder());
         for(int i=0;i<k;i++){
-            priorityQueue.add(arr[i]);
+            priorityQueue.add(arr[i]); //8 10 5
         }
 
         for(int i=k;i<arr.length;i++){
