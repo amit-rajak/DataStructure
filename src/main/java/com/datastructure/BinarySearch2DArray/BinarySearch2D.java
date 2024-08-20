@@ -13,6 +13,7 @@ public class BinarySearch2D {
               };*/
         int arr[][]={{1,3}};
         System.out.println(Arrays.toString(BS2DArray(arr,3)));
+
     }
 
     public static int [] BS2DArray(int arr[][],int target)

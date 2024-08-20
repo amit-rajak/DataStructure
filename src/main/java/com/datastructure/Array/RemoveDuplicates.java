@@ -1,4 +1,4 @@
-package com.striver.array;
+package com.datastructure.Array;
 
 public class RemoveDuplicates {
     public static void main(String[] args) {
@@ -14,18 +14,14 @@ public class RemoveDuplicates {
         if (nums.length == 0) {
             return 0;
         }
-
-        int newLength = 1; // Initialize the new length to 1, as the first element is always unique
-
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] != nums[i - 1]) {
-                nums[newLength] = nums[i];
+        int newLength=1;
+        for(int i=1;i<nums.length;i++){
+            if(nums[i]!=nums[i-1]){
+                nums[newLength]=nums[i];
                 newLength++;
             }
         }
-
         return newLength;
+
     }
-
-
 }

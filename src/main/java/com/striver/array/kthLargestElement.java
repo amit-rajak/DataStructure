@@ -9,7 +9,6 @@ public class kthLargestElement {
        int la= kthLargest(arr,k);
        System.out.println(la);
     }
-
     private static int kthLargest(int[] arr, int k) {
         PriorityQueue<Integer>priorityQueue= new PriorityQueue<>();
         for(int i=0;i<arr.length;i++){

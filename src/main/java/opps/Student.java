@@ -40,8 +40,8 @@ class CustomerSortingComparator implements Comparator<Student> {
         int NameCompare =o1.getName().compareTo(o2.getName());
         int Byage =o1.getAge().compareTo(o2.getAge());
 
-        return (NameCompare == 0) ? Byage
-                : NameCompare;
+        return (NameCompare == 0) ? Byage : NameCompare;
+       // return Byage;
 
     }
 }

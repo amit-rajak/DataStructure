@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class FindTheUnionOptimal {
     public static void main(String[] args) {
-        int arr1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int arr1[] = {1,1, 2, 3, 4, 5, 6, 7, 8, 9, 10,20};
         int arr2[] = {2, 3, 4, 4, 5, 11, 12};
         ArrayList<Integer> list = Union1(arr1, arr2);
 
@@ -25,6 +25,7 @@ public class FindTheUnionOptimal {
         while (i < n && j < m) {
             if (arr1[i] <= arr2[j]) // Case 1 and 2
             {
+
                 if (Union.size() == 0 || Union.get(Union.size()-1) != arr1[i]) {
                     Union.add(arr1[i]);
                 }

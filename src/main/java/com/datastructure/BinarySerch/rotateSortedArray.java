@@ -84,3 +84,30 @@ public class rotateSortedArray {
         }
         return -1;
     }}
+class Solution {
+    public void rotate(int[] nums, int k) {
+        int n=nums.length;
+        if(n==1)
+        {
+            return;
+        }
+        k = k % n;  //rotating factor is greater than array Length
+        revArray(nums,0,n-k-1); //7-3-1=3
+        revArray(nums,n-k,n-1);//7-3=4  ,7-1=6
+        revArray(nums,0,n-1); //0,6
+        //4321765
+        
+
+    }
+
+    public static void revArray(int arr[],int start,int end)
+    {
+        while (start<end)
+        {
+            int temp=arr[start];
+            arr[start]=arr[end];
+            arr[end]=temp;
+            start++;
+            end--;
+        }
+    }}
