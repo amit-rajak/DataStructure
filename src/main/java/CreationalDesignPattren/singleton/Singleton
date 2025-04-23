@@ -1,0 +1,7 @@
+There are Four way to Achieve Singleton
+1.Eager   -> object is create at time of class Create  that's why Static initialize with new object
+2.Lazy    -> object create while Static  method call;
+3.Synchronization
+4.Double locking
+
+

@@ -1,0 +1,36 @@
+Step 1
+
+create phone and laptop specification region wise
+
+so create Phone and laptop interface
+
+step 2
+
+create region wise Phone and laptop  implement
+
+Step 3
+
+Create DeviceFactory where All device will create
+
+
+
+================================================
+ create phone interface
+ create Laptop interface
+ implement both on basis of region
+
+ Step 2 :- Device Factory  it has  abstract  devices method   like phone and Laptop
+
+  implement this  Device Factory on the basis of region
+
+  step 4 :- Device factory provider  so it will provide on basis of client demand
+
+
+
+
+
+
+
+
+
+

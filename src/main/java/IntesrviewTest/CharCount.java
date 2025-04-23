@@ -3,6 +3,7 @@ package IntesrviewTest;
 
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class CharCount {
@@ -12,7 +13,7 @@ public class CharCount {
     }
 
     public static void firstOccurrenceCount(String s) {
-        Map<Character, Integer> charCountMap = new HashMap<>(); // Map to store character counts
+        Map<Character, Integer> charCountMap = new LinkedHashMap<>(); // Map to store character counts
         char prevChar =s.charAt(0);// Initialize the previous character
          int count=1;     // Initialize the count for the first character
 

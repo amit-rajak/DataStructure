@@ -7,8 +7,9 @@ public class KthSmallestElement {
 
 
     public static void main(String[] args) {
-        int arr[] =  {8,10,5,7,9,12};
-        int k=3;
+       // int arr[] =  {8,10,5,7,9,12};//-5, 4, 1, 2, -3
+        int arr[] =  {-5, 4, 1, 2, -3};
+        int k=5;
        int small= kthSmallest(arr,k);
        System.out.println(small);
     }

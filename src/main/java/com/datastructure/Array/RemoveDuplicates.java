@@ -2,7 +2,8 @@ package com.datastructure.Array;
 
 public class RemoveDuplicates {
     public static void main(String[] args) {
-        int[] sortedArray = {1, 3,4,4,5,5,9,11,};
+        //int[] sortedArray = {1, 3,4,4,5,5,9,11,};
+        int[] sortedArray =  {0, 0, 3, 3, 5, 6};
         int newLength = removeDuplicates(sortedArray);
 
         for (int i = 0; i < newLength; i++) {

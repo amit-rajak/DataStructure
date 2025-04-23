@@ -3,7 +3,8 @@ package com.datastructure.CyclicSorting;
 public class missingNumber {
     public static void main(String[] args) {
 
-        int arr[]={9,6,4,2,3,5,7,0,1};
+      //  int arr[]={9,6,4,2,3,5,7,0,1};
+        int arr[]={0, 2, 3, 1, 4};
       System.out.println(findNumber(arr));
 
     }

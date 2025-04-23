@@ -1,4 +1,4 @@
-package designpattren;
+package CreationalDesignPattren;
 
 public class Singleton {
     private static final long serialVersionUID = 1L;//prevent through serialization

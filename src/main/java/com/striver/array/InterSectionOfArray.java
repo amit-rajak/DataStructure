@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class InterSectionOfArray {
     public static void main(String[] args) {
-        int arr1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int arr2[] = {2, 3, 4, 4, 5, 11, 12};             //2,3,4,5
+        int arr1[] = {1, 2, 3, 3,4, 5, 6, 7, 8, 9, 10};
+        int arr2[] = {2, 3,3,4, 4, 5, 11, 12};             //2,3,4,5
         ArrayList<Integer> list = interScection(arr1, arr2);
 
         for(int u:list) {
@@ -20,7 +20,6 @@ public class InterSectionOfArray {
 
         //int i = 0, j = 0; // pointers
         int Visited[]=new int [m];
-        int vigit=1;
         ArrayList<Integer > intersection=new ArrayList<>();
         for(int i=0;i<arr1.length;i++)
         {

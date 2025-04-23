@@ -1,0 +1,38 @@
+             +---------------------+
+             |  DeviceFactory      |   << Abstract Factory >>
+             +---------------------+
+             | +createPhone()      |
+             | +createLaptop()     |
+             +---------------------+
+               /         |         \
+              /          |          \
+             /           |           \
++----------------+ +----------------+ +----------------+
+| USDeviceFactory| | EUDeviceFactory| |AsiaDeviceFactory|
++----------------+ +----------------+ +----------------+
+| +createPhone() | | +createPhone() | | +createPhone() |
+| +createLaptop()| | +createLaptop()| | +createLaptop()|
++----------------+ +----------------+ +----------------+
+       |                    |                   |
+       v                    v                   v
+
++-----------+        +-----------+         +-----------+
+|   USPhone |        |   EUPhone |         | AsiaPhone |
++-----------+        +-----------+         +-----------+
+| <<implements>> Phone interface            <<implements>>
++-----------+        +-----------+         +-----------+
+
++------------+       +------------+        +-------------+
+|  USLaptop  |       |  EULaptop  |        | AsiaLaptop  |
++------------+       +------------+        +-------------+
+| <<implements>> Laptop interface          <<implements>>
++------------+       +------------+        +-------------+
+
+          ^                  ^                     ^
+          |                  |                     |
+       +---------+       +---------+           +---------+
+       |  Phone  |       | Laptop  |           | Abstract |
+       +---------+       +---------+           | Products |
+
+
+
