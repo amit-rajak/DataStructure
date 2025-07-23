@@ -3,7 +3,7 @@ package com.datastructure.Recursion;
 public class SumofDigit {
 
     public static void main(String[] args) {
-  int ans=sum(1342);
+    int ans=sum(1342);
     System.out.println(ans);
 
     }
