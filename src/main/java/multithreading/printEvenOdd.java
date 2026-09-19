@@ -37,11 +37,11 @@ public class printEvenOdd implements Runnable {
     }
 
     public static void main(String[] args) {
-        Object lock= new Object();
-        Runnable r1=  new printEvenOdd(lock);
-        Runnable r2= new printEvenOdd(lock);
-        new Thread(r1,"even").start();
-        new Thread(r2,"odd").start();
+        Object lock = new Object();
+        Runnable r1 = new printEvenOdd(lock);
+        Runnable r2 = new printEvenOdd(lock);
+        new Thread(r1, "even").start();
+        new Thread(r2, "odd").start();
     }
 }
 
